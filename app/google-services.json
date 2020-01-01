@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "948227439421",
+    "firebase_url": "https://beni-tasi-app.firebaseio.com",
+    "project_id": "beni-tasi-app",
+    "storage_bucket": "beni-tasi-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948227439421:android:9483aaf0a0c9ecdaf72354",
+        "android_client_info": {
+          "package_name": "com.korxfixer.benitasiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948227439421-gtduje2mtu03dulo8odtc1ckb9ure8gj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.korxfixer.benitasiapp",
+            "certificate_hash": "d6d8cfb53db8f5ca58604729dacd8ba7f9e98484"
+          }
+        },
+        {
+          "client_id": "948227439421-10tpfnbk20o5suq6j18c4jk1br1mteni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmsvdp7sY83a7hjhm1_2LjdKj2pQKBHYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948227439421-10tpfnbk20o5suq6j18c4jk1br1mteni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
