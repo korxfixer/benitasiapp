@@ -102,7 +102,7 @@ class HomeActivity : AppCompatActivity() {
                     this@HomeActivity.window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
                     this@HomeActivity.window.clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN)
 
-
+//sadasd
                     storageVeKameraIzniIste()
 
                         homePagerAdapter.secilenFragmentiViewPagerdanSil(homeViewPager, 1)
