@@ -80,7 +80,7 @@ class ProfileEditFragment : Fragment() {
 
 
 
-
+//#eklentim "val ref = mStorageRef.child("users").child(gelenKullaniciBilgileri!!.user_id!!).child(profilPhotoUri!!.lastPathSegment)"
                 val ref = mStorageRef.child("users").child(gelenKullaniciBilgileri!!.user_id!!).child("profil_fotosu")
                 var uploadTask = ref.putFile(profilPhotoUri!!)
 

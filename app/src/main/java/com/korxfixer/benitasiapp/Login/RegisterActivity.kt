@@ -185,7 +185,7 @@ class RegisterActivity : AppCompatActivity(), FragmentManager.OnBackStackChanged
                                 for(user in p0!!.children){
 
                                     var okunanKullanici=user.getValue(Users::class.java)
-                                  if(okunanKullanici!!.email != null){
+                                  if(okunanKullanici != null){
                                       if (okunanKullanici!!.email!!.equals(etGirisYontemi.text.toString())){
                                           Toast.makeText(this@RegisterActivity,"Email Kullanımda",Toast.LENGTH_SHORT).show()
                                           emailKullanimdaMi=true
