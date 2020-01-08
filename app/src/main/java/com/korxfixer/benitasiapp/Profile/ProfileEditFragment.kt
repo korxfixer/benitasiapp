@@ -78,7 +78,7 @@ class ProfileEditFragment : Fragment() {
                 dialogYukleniyor.show(activity!!.supportFragmentManager,"yukleniyorFragmenti")
                 dialogYukleniyor.isCancelable=false
 
-//sdd
+
 
 //#eklentim "val ref = mStorageRef.child("users").child(gelenKullaniciBilgileri!!.user_id!!).child(profilPhotoUri!!.lastPathSegment)"
                 val ref = mStorageRef.child("users").child(gelenKullaniciBilgileri!!.user_id!!).child("profil_fotosu")

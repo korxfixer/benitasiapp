@@ -20,9 +20,9 @@ class AlgoliaSearchActivity : AppCompatActivity() {
 
     private val ACTIVITY_NO=1
     private val TAG="AlgoliaSearchActivity"
-    private val ALGOLIA_APP_ID = "60M8DCAPLT"
-    private val ALGOLIA_SEARCH_API_KEY = "3c832a8c9c865059604c76bc54f44644"
-    private val ALGOLIA_INDEX_NAME = "KotlinInstagram"
+    private val ALGOLIA_APP_ID = "J5K44JEEP2"
+    private val ALGOLIA_SEARCH_API_KEY = "b7109e7de16fa47ecc7dd458ec7a2d62"
+    private val ALGOLIA_INDEX_NAME = "benitasiapp"
     lateinit var searcher:Searcher
 
 
