@@ -28,19 +28,19 @@ import androidx.annotation.RequiresApi
  */
 class MyFirebaseMessagingService : FirebaseMessagingService() {
 
-    override fun onMessageReceived(p0: RemoteMessage?) {
+    override fun onMessageReceived(p0: RemoteMessage) {
 
         Log.e("EEE","BURADA1")
 
-        if(p0!!.data != null){
+       // if(p0!!.data != null){
             Log.e("EEE","BURADA2")
             if(p0!!.data!!.get("bildirimTuru")!!.toString().equals("yeni_mesaj")){
 
                 Log.e("EEE","BURADA3")
 
-                var mesajGonderenUserName= p0!!.data.get("kimYolladi")
-                var sonMesaj = p0!!.data.get("neYolladi")
-                var mesajGonderenUserID=p0!!.data.get("secilenUserID")
+                var mesajGonderenUserName= p0.data.get("kimYolladi")
+                var sonMesaj = p0.data.get("neYolladi")
+                var mesajGonderenUserID=p0.data.get("secilenUserID")
 
                 if(ChatActivity.activityAcikMi==false && MessagesFragment.fragmentAcikMi==false)
                 {
@@ -50,10 +50,10 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
 
 
-            }else if(p0!!.data!!.get("bildirimTuru")!!.toString().equals("yeni_takip_istek")){
+            }else if(p0.data.get("bildirimTuru")!!.toString().equals("yeni_takip_istek")){
 
-                var kimYolladi=p0!!.data.get("kimYolladi")
-                var takipEtmekIsteyenUserID=p0!!.data.get("secilenUserID")
+                var kimYolladi=p0.data.get("kimYolladi")
+                var takipEtmekIsteyenUserID=p0.data.get("secilenUserID")
 
                 //Log.e("FCM","BİLDİRİM GELDİ : "+p0!!.data)
 
@@ -72,7 +72,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             }
 
 
-        }
+       // }
 
 
 
@@ -190,7 +190,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     }
 
-    override fun onNewToken(token: String?) {
+    override fun onNewToken(token: String) {
         var yeniToken=token!!
         yeniTokenVeritabaninaKaydet(yeniToken)
     }
