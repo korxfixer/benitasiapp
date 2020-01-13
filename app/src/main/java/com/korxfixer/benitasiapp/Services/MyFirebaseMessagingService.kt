@@ -32,7 +32,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         Log.e("EEE","BURADA1")
 
-       // if(p0!!.data != null){
+       if(p0!!.data != null){
             Log.e("EEE","BURADA2")
             if(p0!!.data!!.get("bildirimTuru")!!.toString().equals("yeni_mesaj")){
 
@@ -72,7 +72,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             }
 
 
-       // }
+        }
 
 
 
