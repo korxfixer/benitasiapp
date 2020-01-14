@@ -29,7 +29,7 @@ exports.takipistegiBildiriGonder=functions.database.ref("/takip_istekleri/{takip
 				notification : {
 
 				title : 'Takip İsteği',
-				body :'${takipEtmekIsteyenUserName} seni takip etmek istiyor',
+				body :`${takipEtmekIsteyenUserName} seni takip etmek istiyor`,
 				icon :'default'
 				}
 			};
