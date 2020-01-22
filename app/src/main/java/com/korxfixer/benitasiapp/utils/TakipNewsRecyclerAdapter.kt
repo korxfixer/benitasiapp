@@ -20,9 +20,7 @@ import java.util.*
 import kotlin.Comparator
 import kotlin.collections.ArrayList
 
-/**
- * Created by Emre on 13.07.2018.
- */
+
 class TakipNewsRecyclerAdapter(var context: Context, var takipcileriminTumBildirimleri: ArrayList<BildirimModel>) : androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder>() {
 
     var filtrelenmisListe=ArrayList<BildirimModel>()
@@ -133,7 +131,7 @@ class TakipNewsRecyclerAdapter(var context: Context, var takipcileriminTumBildir
 
                                                 UniversalImageLoader.setImage(takipEttigimUserProfileURL, takipEttigimUserProfilpic, null, "")
                                             } else {
-                                                takipEttigimUserProfileURL = "https://emrealtunbilek.com/wp-content/uploads/2016/10/apple-icon-72x72.png"
+                                                takipEttigimUserProfileURL = "https://i.hizliresim.com/GZdz92.png"
                                                 UniversalImageLoader.setImage(takipEttigimUserProfileURL, takipEttigimUserProfilpic, null, "")
                                             }
 
@@ -212,7 +210,7 @@ class TakipNewsRecyclerAdapter(var context: Context, var takipcileriminTumBildir
 
                                                 UniversalImageLoader.setImage(takipEttigimUserProfileURL, takipEttigimUserProfilpic, null, "")
                                             } else {
-                                                takipEttigimUserProfileURL = "https://emrealtunbilek.com/wp-content/uploads/2016/10/apple-icon-72x72.png"
+                                                takipEttigimUserProfileURL = "https://i.hizliresim.com/GZdz92.png"
                                                 UniversalImageLoader.setImage(takipEttigimUserProfileURL, takipEttigimUserProfilpic, null, "")
                                             }
 
@@ -251,7 +249,7 @@ class TakipNewsRecyclerAdapter(var context: Context, var takipcileriminTumBildir
                                                                             } else {
                                                                                 begenilenGonderiPicture.visibility = View.VISIBLE
                                                                                 bildirimGonderibegenildi.setText(takipEttigimUserName + " " + kimiTakipEtmisUserName + " kullanıcısının fotoğrafını beğendi. " + TimeAgo.getTimeAgoForComments(oankiBildirim.time!!.toLong()))
-                                                                                var begenilenFotoURL = "https://emrealtunbilek.com/wp-content/uploads/2016/10/apple-icon-72x72.png"
+                                                                                var begenilenFotoURL = "https://i.hizliresim.com/GZdz92.png"
                                                                                 UniversalImageLoader.setImage(begenilenFotoURL, begenilenGonderiPicture, null, "")
                                                                             }
 

@@ -5,9 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import android.view.ViewGroup
 
-/**
- * Created by Emre on 8.07.2018.
- */
+
 class NewsPagerAdapter(fragmentManager: FragmentManager, tabAdlari:ArrayList<String>) : FragmentPagerAdapter(fragmentManager) {
 
     private var mFragmentList:ArrayList<Fragment> = ArrayList()

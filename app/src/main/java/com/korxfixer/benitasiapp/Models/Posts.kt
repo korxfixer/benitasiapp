@@ -1,8 +1,6 @@
 package com.korxfixer.benitasiapp.Models
 
-/**
- * Created by Emre on 29.05.2018.
- */
+
 class Posts {
 
     var user_id:String? = null

@@ -5,9 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import android.view.ViewGroup
 
-/**
- * Created by Emre on 28.02.2018.
- */
+
 class HomePagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
 
     private var mFragmentList:ArrayList<Fragment> = ArrayList()

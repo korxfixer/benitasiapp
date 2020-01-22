@@ -15,9 +15,7 @@ import com.nostra13.universalimageloader.core.assist.ImageScaleType
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener
 
-/**
- * Created by Emre on 9.04.2018.
- */
+
 class UniversalImageLoader(val mContext:Context) {
 
     val config:ImageLoaderConfiguration

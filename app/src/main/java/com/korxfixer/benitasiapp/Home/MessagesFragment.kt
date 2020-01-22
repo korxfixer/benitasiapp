@@ -15,9 +15,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_messages.view.*
 
-/**
- * Created by Emre on 28.02.2018.
- */
+
 class MessagesFragment : Fragment() {
 
     lateinit var mAuth: FirebaseAuth

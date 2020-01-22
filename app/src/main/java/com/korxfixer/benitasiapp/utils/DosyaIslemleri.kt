@@ -16,9 +16,7 @@ import java.io.IOException
 import java.util.*
 import kotlin.Comparator
 
-/**
- * Created by Emre on 24.05.2018.
- */
+
 class DosyaIslemleri {
 
     companion object {

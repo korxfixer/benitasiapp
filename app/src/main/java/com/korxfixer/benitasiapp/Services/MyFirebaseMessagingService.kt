@@ -23,12 +23,10 @@ import android.os.Build.VERSION_CODES.O
 import androidx.annotation.RequiresApi
 
 
-/**
- * Created by Emre on 14.07.2018.
- */
+
 class MyFirebaseMessagingService : FirebaseMessagingService() {
 
-    override fun onMessageReceived(p0: RemoteMessage) {
+     override fun onMessageReceived(p0: RemoteMessage) {
 
         Log.e("EEE","BURADA1")
 
@@ -92,8 +90,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         var bildirimPendingIntent=PendingIntent.getActivity(this,10,pendingIntent,PendingIntent.FLAG_UPDATE_CURRENT)
 
         var builder=NotificationCompat.Builder(this,"Yeni Mesaj")
-                .setSmallIcon(R.drawable.ic_new_notify)
-                .setLargeIcon(BitmapFactory.decodeResource(resources,R.drawable.ic_yeni_mesaj_notif))
+                .setSmallIcon(R.drawable.ic_new_notifyy)
+                .setLargeIcon(BitmapFactory.decodeResource(resources,R.drawable.ic_yeni_mesaj_notifyy))
                 .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                 .setContentTitle(bildirimBaslik)
                 .setContentText(bildirimBody)
@@ -142,8 +140,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         var bildirimPendingIntent=PendingIntent.getActivity(this,15,pendingIntent,PendingIntent.FLAG_UPDATE_CURRENT)
 
         var builder=NotificationCompat.Builder(this,"Yeni Takip isteği")
-                .setSmallIcon(R.drawable.ic_new_notify)
-                .setLargeIcon(BitmapFactory.decodeResource(resources,R.drawable.ic_yeni_takip_istek))
+                .setSmallIcon(R.drawable.ic_new_notifyy)
+                .setLargeIcon(BitmapFactory.decodeResource(resources,R.drawable.ic_yeni_takip_istekk))
                 .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                 .setContentTitle(bildirimBaslik)
                 .setContentText(bildirimBody)
@@ -171,8 +169,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         var bildirimPendingIntent=PendingIntent.getActivity(this,15,pendingIntent,PendingIntent.FLAG_UPDATE_CURRENT)
 
         var builder=NotificationCompat.Builder(this,"Takip Başladı")
-                .setSmallIcon(R.drawable.ic_new_notify)
-                .setLargeIcon(BitmapFactory.decodeResource(resources,R.drawable.ic_yeni_takip_istek))
+                .setSmallIcon(R.drawable.ic_new_notifyy)
+                .setLargeIcon(BitmapFactory.decodeResource(resources,R.drawable.ic_yeni_takip_istekk))
                 .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                 .setContentTitle(bildirimBaslik)
                 .setContentText(bildirimBody)

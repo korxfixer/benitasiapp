@@ -25,9 +25,7 @@ import kotlinx.android.synthetic.main.tek_post_recycler_item.view.*
 import org.greenrobot.eventbus.EventBus
 import java.util.*
 
-/**
- * Created by Emre on 5.06.2018.
- */
+
 class HomeFragmentRecyclerAdapter(var context: Context, var tumGonderiler: ArrayList<UserPosts>) : androidx.recyclerview.widget.RecyclerView.Adapter<HomeFragmentRecyclerAdapter.MyViewHolder>() {
 
 

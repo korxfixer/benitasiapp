@@ -1,8 +1,6 @@
 package com.korxfixer.benitasiapp.Models
 
-/**
- * Created by Emre on 2.07.2018.
- */
+
 class Konusmalar {
 
     var goruldu:Boolean? = null

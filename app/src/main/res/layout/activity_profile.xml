@@ -305,8 +305,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            app:layout_constraintEnd_toStartOf="@+id/imgMap"
-                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/imgGrid"
                             app:layout_constraintTop_toBottomOf="@+id/tvWebSitesi"
                             app:srcCompat="@drawable/ic_list_view" />
@@ -315,22 +314,18 @@
                             android:id="@+id/imgMap"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            app:layout_constraintEnd_toStartOf="@+id/imgtaged"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toEndOf="@+id/imgList"
-                            app:layout_constraintTop_toBottomOf="@+id/tvWebSitesi"
-                            app:srcCompat="@drawable/ic_map" />
+                            android:visibility="invisible"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:srcCompat="@drawable/ic_map"
+                            tools:layout_editor_absoluteY="178dp" />
 
                         <ImageView
                             android:id="@+id/imgtaged"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toEndOf="@+id/imgMap"
-                            app:layout_constraintTop_toBottomOf="@+id/tvWebSitesi"
+                            android:visibility="invisible"
+                            app:layout_constraintEnd_toStartOf="@+id/imgMap"
+                            app:layout_constraintTop_toTopOf="@+id/imgMap"
                             app:srcCompat="@drawable/ic_tagged" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 

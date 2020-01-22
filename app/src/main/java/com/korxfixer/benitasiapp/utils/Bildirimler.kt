@@ -3,9 +3,6 @@ package com.korxfixer.benitasiapp.utils
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
-/**
- * Created by Emre on 8.07.2018.
- */
 object Bildirimler {
 
     private var mRef=FirebaseDatabase.getInstance().reference

@@ -12,9 +12,7 @@ import android.widget.TextView
 import com.korxfixer.benitasiapp.R
 import kotlinx.android.synthetic.main.tek_sutun_grid_resim.view.*
 
-/**
- * Created by Emre on 24.05.2018.
- */
+
 class ShareActivityGridViewAdapter(context: Context?, resource: Int, var klasordekiDosyalar: ArrayList<String>) : ArrayAdapter<String>(context, resource, klasordekiDosyalar) {
 
 

@@ -1,8 +1,6 @@
 package com.korxfixer.benitasiapp.Models
 
-/**
- * Created by Emre on 16.05.2018.
- */
+
 
 class Users {
 

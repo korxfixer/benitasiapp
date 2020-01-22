@@ -1,8 +1,6 @@
 package com.korxfixer.benitasiapp.Models
 
-/**
- * Created by Emre on 19.05.2018.
- */
+
 class UserDetails {
 
     var follower:String? = null

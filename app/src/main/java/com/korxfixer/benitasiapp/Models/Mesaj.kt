@@ -1,8 +1,6 @@
 package com.korxfixer.benitasiapp.Models
 
-/**
- * Created by Emre on 28.06.2018.
- */
+
 class Mesaj {
 
      var mesaj:String? = null

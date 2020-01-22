@@ -101,7 +101,7 @@ class CommentFragment : Fragment() {
                                     var userName=okunanuser!!.user_name.toString()
                                     var adiSoyadi=okunanuser!!.adi_soyadi.toString()
                                     var photo=okunanuser!!.user_detail!!.profile_picture!!
-                                    var profilPicture=if(!photo.isNullOrEmpty()) photo else "https://emrealtunbilek.com/wp-content/uploads/2016/10/apple-icon-72x72.png"
+                                    var profilPicture=if(!photo.isNullOrEmpty()) photo else "https://i.hizliresim.com/GZdz92.png"
 
                                     myMentionAdapter.add(Mention(userName,adiSoyadi,profilPicture))
 

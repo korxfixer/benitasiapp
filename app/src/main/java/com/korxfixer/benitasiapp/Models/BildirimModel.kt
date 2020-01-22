@@ -1,8 +1,6 @@
 package com.korxfixer.benitasiapp.Models
 
-/**
- * Created by Emre on 8.07.2018.
- */
+
 class BildirimModel {
 
     var takip_ettigimin_user_id:String?=null

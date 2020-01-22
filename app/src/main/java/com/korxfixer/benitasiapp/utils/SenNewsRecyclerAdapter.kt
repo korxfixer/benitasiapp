@@ -186,7 +186,7 @@ class SenNewsRecyclerAdapter(var context: Context, var tumBildirimler: ArrayList
                                 var takipEdenPicURL = p0!!.child("user_detail").child("profile_picture").getValue().toString()
                                 UniversalImageLoader.setImage(takipEdenPicURL, takipEdenUserProfileResim, null, "")
                             } else {
-                                var takipEdenPicURL = "https://emrealtunbilek.com/wp-content/uploads/2016/10/apple-icon-72x72.png"
+                                var takipEdenPicURL = "https://i.hizliresim.com/GZdz92.png"
                                 UniversalImageLoader.setImage(takipEdenPicURL, takipEdenUserProfileResim, null, "")
                             }
 
@@ -256,7 +256,7 @@ class SenNewsRecyclerAdapter(var context: Context, var tumBildirimler: ArrayList
                                 var takipEdenPicURL = p0!!.child("user_detail").child("profile_picture").getValue().toString()
                                 UniversalImageLoader.setImage(takipEdenPicURL, takipEdenUserPicture, null, "")
                             } else {
-                                var takipEdenPicURL = "https://emrealtunbilek.com/wp-content/uploads/2016/10/apple-icon-72x72.png"
+                                var takipEdenPicURL = "https://i.hizliresim.com/GZdz92.png"
                                 UniversalImageLoader.setImage(takipEdenPicURL, takipEdenUserPicture, null, "")
                             }
 
@@ -314,7 +314,7 @@ class SenNewsRecyclerAdapter(var context: Context, var tumBildirimler: ArrayList
                                 var takipEdenPicURL = p0!!.child("user_detail").child("profile_picture").getValue().toString()
                                 UniversalImageLoader.setImage(takipEdenPicURL, begenenProfilePicture, null, "")
                             } else {
-                                var takipEdenPicURL = "https://emrealtunbilek.com/wp-content/uploads/2016/10/apple-icon-72x72.png"
+                                var takipEdenPicURL = "https://i.hizliresim.com/GZdz92.png"
                                 UniversalImageLoader.setImage(takipEdenPicURL, begenenProfilePicture, null, "")
                             }
 
@@ -350,7 +350,7 @@ class SenNewsRecyclerAdapter(var context: Context, var tumBildirimler: ArrayList
                                                             UniversalImageLoader.setImage(begenilenFotoURL, begenilenGonderiPicture, null, "")
                                                         } else {
                                                             begenilenGonderiPicture.visibility = View.VISIBLE
-                                                            var begenilenFotoURL = "https://emrealtunbilek.com/wp-content/uploads/2016/10/apple-icon-72x72.png"
+                                                            var begenilenFotoURL = "https://i.hizliresim.com/GZdz92.png"
                                                             UniversalImageLoader.setImage(begenilenFotoURL, begenilenGonderiPicture, null, "")
                                                         }
 

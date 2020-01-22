@@ -1,8 +1,6 @@
 package com.korxfixer.benitasiapp.utils;
 
-/**
- * Created by Emre on 6.06.2018.
- */
+
 
 public class TimeAgo {
 

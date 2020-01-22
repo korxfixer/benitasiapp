@@ -13,9 +13,7 @@ import com.korxfixer.benitasiapp.Search.SearchActivity
 import com.korxfixer.benitasiapp.Share.ShareActivity
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
 
-/**
- * Created by Emre on 25.02.2018.
- */
+
 class BottomnavigationViewHelper {
 
     companion object {

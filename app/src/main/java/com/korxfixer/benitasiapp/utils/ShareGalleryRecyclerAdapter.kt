@@ -11,9 +11,7 @@ import com.korxfixer.benitasiapp.R
 import kotlinx.android.synthetic.main.tek_sutun_grid_resim.view.*
 import org.greenrobot.eventbus.EventBus
 
-/**
- * Created by Emre on 3.06.2018.
- */
+
 class ShareGalleryRecyclerAdapter(var klasordekiDosyalar:ArrayList<String>, var myContext:Context): androidx.recyclerview.widget.RecyclerView.Adapter<ShareGalleryRecyclerAdapter.MyViewHolder>() {
 
     lateinit var inflater:LayoutInflater

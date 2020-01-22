@@ -62,12 +62,13 @@
         app:srcCompat="@drawable/ic_comment" />
 
     <ImageView
-        android:id="@+id/imgGonder"
+        android:id="@+id/imgSil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:adjustViewBounds="true"
         android:cropToPadding="true"
+        android:visibility="invisible"
         app:layout_constraintStart_toEndOf="@+id/imgYorum"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout"
         app:srcCompat="@drawable/ic_gonder" />

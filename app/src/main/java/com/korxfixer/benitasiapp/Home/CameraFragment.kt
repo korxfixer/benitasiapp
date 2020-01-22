@@ -16,9 +16,7 @@ import org.greenrobot.eventbus.Subscribe
 import java.io.File
 import java.io.FileOutputStream
 
-/**
- * Created by Emre on 28.02.2018.
- */
+
 class CameraFragment : Fragment() {
 
     var myCamera:CameraView?=null

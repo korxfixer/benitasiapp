@@ -23,9 +23,7 @@ import org.greenrobot.eventbus.EventBus
 import java.util.*
 import kotlin.Comparator
 
-/**
- * Created by Emre on 5.06.2018.
- */
+
 class ProfilePostListRecyclerAdapter(var context: Context, var tumGonderiler: ArrayList<UserPosts>) : androidx.recyclerview.widget.RecyclerView.Adapter<ProfilePostListRecyclerAdapter.MyViewHolder>() {
 
     init {

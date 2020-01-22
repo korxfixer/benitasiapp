@@ -18,9 +18,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.tek_satir_konusma_item.view.*
 
-/**
- * Created by Emre on 2.07.2018.
- */
+
 class KonusmalarRecyclerAdapter(var tumKonusmalar:ArrayList<Konusmalar>, var myContext:Context): androidx.recyclerview.widget.RecyclerView.Adapter<KonusmalarRecyclerAdapter.MyViewHolder>() {
 
 

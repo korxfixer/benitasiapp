@@ -3,9 +3,7 @@ package com.korxfixer.benitasiapp.utils
 import com.korxfixer.benitasiapp.Models.UserPosts
 import com.korxfixer.benitasiapp.Models.Users
 
-/**
- * Created by Emre on 1.05.2018.
- */
+
 
 class EventbusDataEvents {
 
