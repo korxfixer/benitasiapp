@@ -7,6 +7,7 @@ import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import androidx.core.content.ContextCompat
 import android.view.View
+import android.widget.Toast
 import com.korxfixer.benitasiapp.Login.LoginActivity
 import com.korxfixer.benitasiapp.Models.Posts
 import com.korxfixer.benitasiapp.Models.UserPosts
@@ -19,6 +20,10 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
 import com.hoanganhtuan95ptit.autoplayvideorecyclerview.AutoPlayVideoRecyclerView
 import kotlinx.android.synthetic.main.activity_profile.*
+import kotlinx.android.synthetic.main.activity_profile.bottomNavigationView
+import kotlinx.android.synthetic.main.fragment_tek_gonderi.*
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.*
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.imgSil
 import org.greenrobot.eventbus.EventBus
 import kotlin.collections.ArrayList
 
@@ -89,6 +94,8 @@ class ProfileActivity : AppCompatActivity() {
 
             setupRecyclerView(2)
         }
+
+       
 
     }
 

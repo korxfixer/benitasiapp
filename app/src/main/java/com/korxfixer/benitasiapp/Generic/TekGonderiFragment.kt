@@ -3,7 +3,9 @@ package com.korxfixer.benitasiapp.Generic
 
 import android.content.Context
 import android.content.Intent
+import android.opengl.Visibility
 import android.os.Bundle
+import android.util.Log
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +14,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import com.korxfixer.benitasiapp.Models.UserPosts
 import com.korxfixer.benitasiapp.Profile.ProfileActivity
 import com.korxfixer.benitasiapp.Profile.ProfileSettingsActivity
@@ -19,12 +22,13 @@ import com.korxfixer.benitasiapp.Profile.ProfileSettingsActivity
 import com.korxfixer.benitasiapp.R
 import com.korxfixer.benitasiapp.utils.*
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.*
+import com.google.firebase.storage.FirebaseStorage
+import com.korxfixer.benitasiapp.Models.BildirimModel
 import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.activity_profile_settings.*
+import kotlinx.android.synthetic.main.fragment_tek_gonderi.*
 import kotlinx.android.synthetic.main.fragment_tek_gonderi.view.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -35,6 +39,10 @@ class TekGonderiFragment : Fragment() {
     var secilenGonderi:UserPosts?=null
     var videoMu:Boolean?=null
     val ACTIVITY_NO =4
+
+
+
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -63,6 +71,8 @@ class TekGonderiFragment : Fragment() {
 
 
         return myView
+
+
     }
 
     fun setupNavigationView() {
@@ -89,8 +99,69 @@ class TekGonderiFragment : Fragment() {
         var yorumlariGoster = tumLayout.tvYorumlariGoster
         var myVideo = tumLayout.videoView
 
+        var gönderiSil = tumLayout.imgSil
+
         var gonderiTuru=tumLayout.textView4
         var myHomeActivity=activity
+
+
+        var userID = FirebaseAuth.getInstance().currentUser!!.uid
+        var mRef = FirebaseDatabase.getInstance().reference
+        var oankipostidsi =oankiGonderi.postID
+
+
+if (oankipostidsi != null && userID == oankiGonderi.userID){
+    gönderiSil.visibility=View.VISIBLE
+}else{
+    gönderiSil.visibility=View.INVISIBLE
+}
+       gönderiSil.setOnClickListener {
+
+
+           if (oankipostidsi != null && userID == oankiGonderi.userID) {
+
+//oankigönderinin idisini çekme
+               Log.e("qwe", "wwwww${mRef.child("posts").child(userID).child(oankipostidsi)}")
+
+               mRef.child("posts").child(userID).child(oankipostidsi).removeValue()
+//Sildikten sonra post sayısından eksiltme
+
+               mRef.child("users").child(userID).child("user_detail").addListenerForSingleValueEvent(object :ValueEventListener{
+                   override fun onCancelled(p0: DatabaseError) {
+
+                   }
+
+                   override fun onDataChange(p0: DataSnapshot) {
+
+                       var oankiGonderiSayisi = p0!!.child("post").getValue().toString().toInt()
+                       oankiGonderiSayisi--
+                       mRef.child("users").child(userID).child("user_detail").child("post").setValue(oankiGonderiSayisi.toString())
+                   }
+
+               })
+
+
+
+       /* //strogeden resimi silme
+
+               var storageyol ="cropimage0961.jpg"
+           if (storageyol != null){
+               val storageRef = FirebaseStorage.getInstance().reference
+               val silmeStorage = storageRef.child("users").child(userID).child(storageyol)
+                var silmeStorageSil =silmeStorage.delete().addOnSuccessListener {
+                    Log.e("qwe","silindi$silmeStorage")
+                }
+
+
+           }*/
+
+
+
+
+           }
+       }
+
+
 
 
         if(videoMu){
@@ -230,6 +301,8 @@ class TekGonderiFragment : Fragment() {
 
 
         }
+
+
 
 
     }
