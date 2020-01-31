@@ -5,12 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import android.view.View
+import android.widget.Toast
 import com.korxfixer.benitasiapp.Login.LoginActivity
 import com.korxfixer.benitasiapp.R
 import com.korxfixer.benitasiapp.utils.BottomnavigationViewHelper
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
+import com.korxfixer.benitasiapp.Home.*
+import com.korxfixer.benitasiapp.utils.HomePagerAdapter
+import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_profile_settings.*
 
 
@@ -26,6 +30,8 @@ class ProfileSettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_settings)
+
+
 
 
         setupAuthListener()
@@ -96,6 +102,15 @@ class ProfileSettingsActivity : AppCompatActivity() {
             var transaction=supportFragmentManager.beginTransaction()
             transaction.add(R.id.profileSettingsContainer,BegendigimGonderilerFragment(),"fra1")
             transaction.addToBackStack("BegendigimGonderilerFragment")
+            transaction.commit()
+
+        }
+        tvMesajlarProfilAyarları.setOnClickListener {
+            profileSettingsRoot.visibility=View.GONE
+            profileSettingsContainer.visibility=View.VISIBLE
+            var transaction=supportFragmentManager.beginTransaction()
+            transaction.add(R.id.profileSettingsContainer,MessagesFragment(),"fraaaaaaa")
+            transaction.addToBackStack("qweqweqwe")
             transaction.commit()
 
         }
@@ -216,4 +231,5 @@ class ProfileSettingsActivity : AppCompatActivity() {
             mAuth.removeAuthStateListener(mAuthListener)
         }
     }
+
 }

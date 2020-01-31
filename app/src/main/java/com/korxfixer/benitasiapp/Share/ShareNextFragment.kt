@@ -88,7 +88,7 @@ class ShareNextFragment : Fragment() {
     private fun veritabaninaBilgileriYaz(yuklenenFileUrl: String) {
 
         var postID = mRef.child("posts").child(mUser.uid).push().key
-        var yuklenenPost = Posts(mUser.uid, postID, 0, etPostAciklama.text.toString(), yuklenenFileUrl)
+        var yuklenenPost = Posts(mUser.uid, postID, 0, etPostAciklama.text.toString(),etPostKoltukSayisi.text.toString(),etPostMarkaModel.text.toString(),etPostSaatler.text.toString(),etPostGunler.text.toString(), yuklenenFileUrl)
 
 
         if (postID != null) {

@@ -3,9 +3,7 @@ package com.korxfixer.benitasiapp.Generic
 
 import android.content.Context
 import android.content.Intent
-import android.opengl.Visibility
 import android.os.Bundle
-import android.util.Log
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
@@ -22,13 +20,9 @@ import com.korxfixer.benitasiapp.Profile.ProfileSettingsActivity
 import com.korxfixer.benitasiapp.R
 import com.korxfixer.benitasiapp.utils.*
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
-import com.google.firebase.storage.FirebaseStorage
-import com.korxfixer.benitasiapp.Models.BildirimModel
 import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.activity_profile_settings.*
-import kotlinx.android.synthetic.main.fragment_tek_gonderi.*
 import kotlinx.android.synthetic.main.fragment_tek_gonderi.view.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -91,6 +85,12 @@ class TekGonderiFragment : Fragment() {
         var userNameTitle = tumLayout.tvKullaniciAdiBaslik
         var gonderi = tumLayout.imgPostResim
         var userNameveAciklama = tumLayout.tvKullaniciAdiveAciklama
+
+        var koltukSayisi = tumLayout.tvKoltukSayisi
+        var markaModel = tumLayout.tvMarkaModel
+        var saatler  = tumLayout.tvSaatler
+        var gunler = tumLayout.tvGunler
+
         var gonderiKacZamanOnce = tumLayout.tvKacZamanOnce
         var yorumYap = tumLayout.imgYorum
         var gonderiBegen = tumLayout.imgBegen
@@ -121,9 +121,10 @@ if (oankipostidsi != null && userID == oankiGonderi.userID){
            if (oankipostidsi != null && userID == oankiGonderi.userID) {
 
 //oankigönderinin idisini çekme
-               Log.e("qwe", "wwwww${mRef.child("posts").child(userID).child(oankipostidsi)}")
+              // Log.e("qwe", "wwwww${mRef.child("posts").child(userID).child(oankipostidsi)}")
 
                mRef.child("posts").child(userID).child(oankipostidsi).removeValue()
+               Toast.makeText(context,"Silindi",Toast.LENGTH_LONG).show()
 //Sildikten sonra post sayısından eksiltme
 
                mRef.child("users").child(userID).child("user_detail").addListenerForSingleValueEvent(object :ValueEventListener{
@@ -136,6 +137,7 @@ if (oankipostidsi != null && userID == oankiGonderi.userID){
                        var oankiGonderiSayisi = p0!!.child("post").getValue().toString().toInt()
                        oankiGonderiSayisi--
                        mRef.child("users").child(userID).child("user_detail").child("post").setValue(oankiGonderiSayisi.toString())
+
                    }
 
                })
@@ -199,8 +201,17 @@ if (oankipostidsi != null && userID == oankiGonderi.userID){
 
         }
 
-
         userNameveAciklama.setText(oankiGonderi.userName.toString()+" "+oankiGonderi.postAciklama.toString())
+     /**   userNameveAciklama.setText(" "+oankiGonderi.postAciklama.toString())
+
+        koltukSayisi.setText(" "+oankiGonderi.koltuk_sayisi.toString())
+        markaModel.setText(" "+oankiGonderi.marka_model.toString())
+        saatler.setText(" "+oankiGonderi.saatler.toString())
+        gunler.setText(" "+oankiGonderi.gunler.toString())
+
+*/
+
+
 
         UniversalImageLoader.setImage(oankiGonderi.userPhotoURL!!, profileImage, null, "")
         gonderiKacZamanOnce.setText(TimeAgo.getTimeAgo(oankiGonderi.postYuklenmeTarih!!))

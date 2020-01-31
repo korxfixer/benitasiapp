@@ -7,7 +7,6 @@ import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import androidx.core.content.ContextCompat
 import android.view.View
-import android.widget.Toast
 import com.korxfixer.benitasiapp.Login.LoginActivity
 import com.korxfixer.benitasiapp.Models.Posts
 import com.korxfixer.benitasiapp.Models.UserPosts
@@ -21,9 +20,6 @@ import com.google.firebase.database.*
 import com.hoanganhtuan95ptit.autoplayvideorecyclerview.AutoPlayVideoRecyclerView
 import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.activity_profile.bottomNavigationView
-import kotlinx.android.synthetic.main.fragment_tek_gonderi.*
-import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.*
-import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.imgSil
 import org.greenrobot.eventbus.EventBus
 import kotlin.collections.ArrayList
 
@@ -260,6 +256,12 @@ class ProfileActivity : AppCompatActivity() {
                                 eklenecekUserPosts.postID=ds.getValue(Posts::class.java)!!.post_id
                                 eklenecekUserPosts.postURL=ds.getValue(Posts::class.java)!!.file_url
                                 eklenecekUserPosts.postAciklama=ds.getValue(Posts::class.java)!!.aciklama
+
+                                eklenecekUserPosts.koltuk_sayisi=ds.getValue(Posts::class.java)!!.koltuk_sayisi
+                                eklenecekUserPosts.marka_model=ds.getValue(Posts::class.java)!!.marka_model
+                                eklenecekUserPosts.saatler=ds.getValue(Posts::class.java)!!.saatler
+                                eklenecekUserPosts.gunler=ds.getValue(Posts::class.java)!!.gunler
+
                                 eklenecekUserPosts.postYuklenmeTarih=ds.getValue(Posts::class.java)!!.yuklenme_tarih
 
                                 tumGonderiler.add(eklenecekUserPosts)

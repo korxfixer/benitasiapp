@@ -24,7 +24,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="opacityPercent" value="80" />
+                                                <entry key="opacityPercent" value="60" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -35,7 +35,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_delete_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_message_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -47,7 +47,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="opacityPercent" value="80" />
+                                                <entry key="opacityPercent" value="60" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -58,9 +58,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="D:\k.o.r.x\Kotlin\beniyasi İÇİNDE\defaultealogo.png" />
-                                      <entry key="outputName" value="ic_sil" />
-                                      <entry key="theme" value="CUSTOM" />
+                                      <entry key="imageAsset" value="D:\k.o.r.x\Kotlin\beniyasi İÇİNDE\mail.png" />
+                                      <entry key="outputName" value="tab_directmesageee" />
                                       <entry key="themeColor" value="000000" />
                                     </map>
                                   </option>
@@ -89,7 +88,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="D:\k.o.r.x\Kotlin\beniyasi İÇİNDE\defaultealogo.png" />
+                                      <entry key="foregroundImage" value="D:\k.o.r.x\Kotlin\beniyasi İÇİNDE\message.png" />
                                       <entry key="outputName" value="ic_launcher_roundd" />
                                     </map>
                                   </option>
@@ -112,6 +111,17 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="clipartAsset">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_local_post_office_black_24dp.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="image">
                                         <value>
                                           <PersistentState>
@@ -127,9 +137,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
                                       <entry key="iconShape" value="CIRCLE" />
                                       <entry key="imageAsset" value="D:\k.o.r.x\Kotlin\beniyasi İÇİNDE\defaultealogo.png" />
+                                      <entry key="outputName" value="tab_directmessssage" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -157,7 +167,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_delete_forever_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_message_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -192,8 +202,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="D:\k.o.r.x\Kotlin\beniyasi İÇİNDE\sil.png" />
+                                      <entry key="imageAsset" value="D:\k.o.r.x\Kotlin\beniyasi İÇİNDE\message.png" />
                                       <entry key="outputName" value="ic_sil" />
                                     </map>
                                   </option>
@@ -204,7 +213,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
+                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>

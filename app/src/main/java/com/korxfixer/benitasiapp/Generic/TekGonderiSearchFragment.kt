@@ -30,7 +30,20 @@ import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.activity_profile_settings.*
 import kotlinx.android.synthetic.main.activity_search.*
-import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.*
+import kotlinx.android.synthetic.main.fragment_tek_gonderi.view.*
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.imgBegen
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.imgClose
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.imgPostResim
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.imgUserProfile
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.imgYorum
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.insta_like_view
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.textView4
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.tvBegenmeSayisi
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.tvKacZamanOnce
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.tvKullaniciAdiBaslik
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.tvKullaniciAdiveAciklama
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.tvYorumlariGoster
+import kotlinx.android.synthetic.main.fragment_tek_gonderi_search.view.videoView
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 
@@ -79,6 +92,12 @@ class TekGonderiSearchFragment : Fragment() {
         var userNameTitle = tumLayout.tvKullaniciAdiBaslik
         var gonderi = tumLayout.imgPostResim
         var userNameveAciklama = tumLayout.tvKullaniciAdiveAciklama
+
+        var koltukSayisi = tumLayout.tvKoltukSayisi
+        var markaModel = tumLayout.tvMarkaModel
+        var saatler  = tumLayout.tvSaatler
+        var gunler = tumLayout.tvGunler
+
         var gonderiKacZamanOnce = tumLayout.tvKacZamanOnce
         var yorumYap = tumLayout.imgYorum
         var gonderiBegen = tumLayout.imgBegen
@@ -128,7 +147,14 @@ class TekGonderiSearchFragment : Fragment() {
 
 
         userNameveAciklama.setText(oankiGonderi.userName.toString()+" "+oankiGonderi.postAciklama.toString())
+/**      userNameveAciklama.setText(" "+oankiGonderi.postAciklama.toString())
 
+        koltukSayisi.setText(" "+oankiGonderi.koltuk_sayisi.toString())
+        markaModel.setText(" "+oankiGonderi.marka_model.toString())
+        saatler.setText(" "+oankiGonderi.saatler.toString())
+        gunler.setText(" "+oankiGonderi.gunler.toString())
+
+*/
         UniversalImageLoader.setImage(oankiGonderi.userPhotoURL!!, profileImage, null, "")
         gonderiKacZamanOnce.setText(TimeAgo.getTimeAgo(oankiGonderi.postYuklenmeTarih!!))
 

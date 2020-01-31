@@ -207,6 +207,12 @@ class SearchActivity : AppCompatActivity() {
                                    eklenecekUserPost.userPhotoURL=okunanUser!!.user_detail!!.profile_picture
                                    eklenecekUserPost.postID=okunanPost!!.post_id
                                    eklenecekUserPost.postAciklama=okunanPost!!.aciklama
+
+                                   eklenecekUserPost.koltuk_sayisi=okunanPost!!.koltuk_sayisi
+                                   eklenecekUserPost.marka_model=okunanPost!!.marka_model
+                                   eklenecekUserPost.saatler=okunanPost!!.saatler
+                                   eklenecekUserPost.gunler=okunanPost!!.gunler
+
                                    eklenecekUserPost.postYuklenmeTarih=okunanPost!!.yuklenme_tarih
                                    eklenecekUserPost.postURL=okunanPost!!.file_url
 

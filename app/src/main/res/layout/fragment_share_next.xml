@@ -76,44 +76,176 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="410dp"
+        android:layout_height="288dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar4">
 
+        <com.hendraanggrian.widget.SocialEditText
+            android:id="@+id/etPostMarkaModel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Fıat Ducato 2015"
+            android:inputType="textMultiLine"
+            app:hashtagColor="@color/mavi"
+            app:layout_constraintBottom_toBottomOf="@+id/textView25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toTopOf="@+id/textView25"
+            app:mentionColor="@color/mavi" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Marka-Model:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Saatler:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Günler:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
         <ImageView
             android:id="@+id/imgSecilenResim"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:scaleType="fitXY"
             android:src="@drawable/common_google_signin_btn_icon_dark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.039" />
 
         <com.hendraanggrian.widget.SocialEditText
             android:id="@+id/etPostAciklama"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:background="@null"
             android:ems="10"
-            android:hint="Bir açıklama yazın..."
-            app:hashtagColor="@color/mavi"
-            app:mentionColor="@color/mavi"
+            android:hint="Ör:Arnavutköy başta olmak üzere avrupa yakasının her yerine servisimiz vardır."
             android:inputType="textMultiLine"
+            app:hashtagColor="@color/mavi"
             app:layout_constraintBottom_toBottomOf="@+id/imgSecilenResim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imgSecilenResim"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:mentionColor="@color/mavi" />
+
+        <com.hendraanggrian.widget.SocialEditText
+            android:id="@+id/etPostKoltukSayisi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Ör:14+1"
+            android:inputType="textMultiLine"
+            app:hashtagColor="@color/mavi"
+            app:layout_constraintBottom_toBottomOf="@+id/textView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.774"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toTopOf="@+id/textView22"
+            app:mentionColor="@color/mavi" />
+
+        <com.hendraanggrian.widget.SocialEditText
+            android:id="@+id/etPostSaatler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Hafra içi 10'a kadar haftasonu arayın"
+            android:inputType="textMultiLine"
+            app:hashtagColor="@color/mavi"
+            app:layout_constraintBottom_toBottomOf="@+id/textView26"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="@+id/textView26"
+            app:layout_constraintVertical_bias="0.0"
+            app:mentionColor="@color/mavi" />
+
+        <com.hendraanggrian.widget.SocialEditText
+            android:id="@+id/etPostGunler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Her gün"
+            android:inputType="textMultiLine"
+            app:hashtagColor="@color/mavi"
+            app:layout_constraintBottom_toBottomOf="@+id/textView27"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView27"
+            app:layout_constraintTop_toTopOf="@+id/textView27"
+            app:mentionColor="@color/mavi" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Koltuk Sayısı:"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSecilenResim" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servis Çekilebilecek Bölgeler ve Açıklama"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgSecilenResim"
             app:layout_constraintTop_toTopOf="@+id/imgSecilenResim" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View

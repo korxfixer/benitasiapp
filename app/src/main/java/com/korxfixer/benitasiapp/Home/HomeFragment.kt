@@ -155,6 +155,12 @@ class HomeFragment : Fragment() {
                                         eklenecekUserPosts.postID = ds.getValue(Posts::class.java)!!.post_id
                                         eklenecekUserPosts.postURL = ds.getValue(Posts::class.java)!!.file_url
                                         eklenecekUserPosts.postAciklama = ds.getValue(Posts::class.java)!!.aciklama
+
+                                        eklenecekUserPosts.koltuk_sayisi = ds.getValue(Posts::class.java)!!.koltuk_sayisi
+                                        eklenecekUserPosts.marka_model = ds.getValue(Posts::class.java)!!.marka_model
+                                        eklenecekUserPosts.saatler = ds.getValue(Posts::class.java)!!.saatler
+                                        eklenecekUserPosts.gunler = ds.getValue(Posts::class.java)!!.gunler
+
                                         eklenecekUserPosts.postYuklenmeTarih = ds.getValue(Posts::class.java)!!.yuklenme_tarih
 
                                         tumGonderiler.add(eklenecekUserPosts)

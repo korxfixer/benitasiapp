@@ -83,6 +83,12 @@ class BegendigimGonderilerFragment : Fragment() {
                                                     begendigimPost.postID=gonderi.post_id
                                                     begendigimPost.postURL=gonderi.file_url
                                                     begendigimPost.postAciklama=gonderi.aciklama
+
+                                                    begendigimPost.koltuk_sayisi=gonderi.koltuk_sayisi
+                                                    begendigimPost.marka_model=gonderi.marka_model
+                                                    begendigimPost.saatler=gonderi.saatler
+                                                    begendigimPost.gunler=gonderi.gunler
+
                                                     begendigimPost.postYuklenmeTarih=gonderi.yuklenme_tarih
 
                                                     begendigimTumGonderiler.add(begendigimPost)
